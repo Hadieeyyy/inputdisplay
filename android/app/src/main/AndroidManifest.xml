@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.zuri_work">
+   <uses-permission android:name="android.permission.INTERNET"/>
    <application
         android:label="zuri_work"
         android:icon="@mipmap/ic_launcher">
