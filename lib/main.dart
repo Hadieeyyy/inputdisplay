@@ -60,113 +60,118 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Padding(
           padding: EdgeInsets.fromLTRB(0.0,0.0,0.0,0.0),
-          child: Column(
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
+          child: 
+    Column(
+              children: [
+                Expanded(
+                  child:
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
 
-                    child: Padding(
-                      padding: const EdgeInsets.all(25.0),
-                      child: Center(
-                        child: Image.asset('assets/hng.png',
-                          width: 80.0, height: 60.0,
+                      child: Padding(
+                        padding: const EdgeInsets.all(25.0),
+                        child: Center(
+                          child: Image.asset('assets/hng.png',
+                            width: 80.0, height: 60.0,
 
+                          ),
                         ),
                       ),
+
                     ),
 
-                  ),
+                    SizedBox(
+                      width: 1.0,
+                    ),
+                    Container(
 
-                  SizedBox(
-                    width: 1.0,
-                  ),
-                  Container(
-
-                    child: Padding(
-                      padding: const EdgeInsets.all(25.0),
-                      child: Center(
-                        child: Image.asset('assets/i4g.jpg',
-                          width: 80.0, height: 60.0,
+                      child: Padding(
+                        padding: const EdgeInsets.all(25.0),
+                        child: Center(
+                          child: Image.asset('assets/i4g.jpg',
+                            width: 80.0, height: 60.0,
+                          ),
                         ),
                       ),
+
                     ),
+                    SizedBox(
+                      width: 1.0,
+                    ),
+                    Container(
 
-                  ),
-                  SizedBox(
-                    width: 1.0,
-                  ),
-                  Container(
+                      child: Padding(
+                        padding: const EdgeInsets.all(25.0),
+                        child: Center(
+                          child: Image.asset('assets/zuri.png',
+                            width: 60.0, height: 60.0,
 
-                    child: Padding(
-                      padding: const EdgeInsets.all(25.0),
-                      child: Center(
-                        child: Image.asset('assets/zuri.png',
-                          width: 60.0, height: 60.0,
-
+                          ),
                         ),
                       ),
+
                     ),
 
-                  ),
 
-
-                ],
-              ),
-              Text("Enter something"),
-              SizedBox(height: 20.0),
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical:0.0,
-                    horizontal:40.0),
-                child: TextField(
-                  controller: input,
-
+                  ],
                 ),
-              ),
-              SizedBox(height: 20.0),
-              ElevatedButton(onPressed: ()
-                {
-                 // display = input.text();
-                  Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => Display()
-                ),
-              );
-                  },
-                  child: Text("Display")),
-              SizedBox(
-                height: 20.0
-              ),
-
-
-              Link(
-                child: Text('Go to Zuri page', style: TextStyle(
-                  decoration: TextDecoration.underline, // add add underline in text
-                ),),
-                url: 'https://internship.zuri.team/',
-
-              ),
-              SizedBox(height: 20.0),
-              Link(
-                child: Text('Go to HNG page', style: TextStyle(
-                  decoration: TextDecoration.underline, // add add underline in text
-                ),),
-                url: 'https://hng.tech/',
-
-              ),
-              SizedBox(height: 20.0),
-              Link(
-                child: Text('Go to i4g page', style: TextStyle(
-                  decoration: TextDecoration.underline, // add add underline in text
-                ),),
-                url: 'https://ingressive.org/',
-
-              ),
-              SizedBox(height: 20.0),
-
-            ],
           ),
+                Text("Enter something"),
+                SizedBox(height: 20.0),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical:0.0,
+                      horizontal:40.0),
+                  child: TextField(
+                    controller: input,
+
+                  ),
+                ),
+                SizedBox(height: 20.0),
+                ElevatedButton(onPressed: ()
+                  {
+                   // display = input.text();
+                    Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Display()
+                  ),
+                );
+                    },
+                    child: Text("Display")),
+                SizedBox(
+                  height: 20.0
+                ),
+
+
+                Link(
+                  child: Text('Go to Zuri page', style: TextStyle(
+                    decoration: TextDecoration.underline, // add add underline in text
+                  ),),
+                  url: 'https://internship.zuri.team/',
+
+                ),
+                SizedBox(height: 20.0),
+                Link(
+                  child: Text('Go to HNG page', style: TextStyle(
+                    decoration: TextDecoration.underline, // add add underline in text
+                  ),),
+                  url: 'https://hng.tech/',
+
+                ),
+                SizedBox(height: 20.0),
+                Link(
+                  child: Text('Go to i4g page', style: TextStyle(
+                    decoration: TextDecoration.underline, // add add underline in text
+                  ),),
+                  url: 'https://ingressive.org/',
+
+                ),
+                SizedBox(height: 20.0),
+
+              ],
+            ),
+
         ),
       ),
     );
