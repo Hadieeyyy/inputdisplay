@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
       body: Center(
         child: Padding(
-          padding: EdgeInsets.fromLTRB(8.0,10.0,8.0,0.0),
+          padding: EdgeInsets.fromLTRB(0.0,0.0,0.0,0.0),
           child: Column(
             children: [
               Row(
@@ -71,7 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       padding: const EdgeInsets.all(25.0),
                       child: Center(
                         child: Image.asset('assets/hng.png',
-                          width: 40.0, height: 40.0,
+                          width: 80.0, height: 60.0,
 
                         ),
                       ),
@@ -80,7 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
 
                   SizedBox(
-                    width: 9.0,
+                    width: 1.0,
                   ),
                   Container(
 
@@ -88,15 +88,14 @@ class _MyHomePageState extends State<MyHomePage> {
                       padding: const EdgeInsets.all(25.0),
                       child: Center(
                         child: Image.asset('assets/i4g.jpg',
-                          width: 40.0, height: 40.0,
-
+                          width: 80.0, height: 60.0,
                         ),
                       ),
                     ),
 
                   ),
                   SizedBox(
-                    width: 9.0,
+                    width: 1.0,
                   ),
                   Container(
 
@@ -104,7 +103,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       padding: const EdgeInsets.all(25.0),
                       child: Center(
                         child: Image.asset('assets/zuri.png',
-                          width: 40.0, height: 40.0,
+                          width: 60.0, height: 60.0,
 
                         ),
                       ),
@@ -117,9 +116,13 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               Text("Enter something"),
               SizedBox(height: 20.0),
-              TextField(
-                controller: input,
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical:0.0,
+                    horizontal:40.0),
+                child: TextField(
+                  controller: input,
 
+                ),
               ),
               SizedBox(height: 20.0),
               ElevatedButton(onPressed: ()
@@ -133,7 +136,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   },
                   child: Text("Display")),
               SizedBox(
-                height: 50.0
+                height: 20.0
               ),
 
 
@@ -185,7 +188,10 @@ class _DisplayState extends State<Display> {
           title: Text("INPUT DISPLAY")
       ),
       body: Center(
-        child: Text(input.text),
+        child: Text(input.text,
+        style: TextStyle(
+            fontSize: 20.0
+        )),
       ),
     );
   }
