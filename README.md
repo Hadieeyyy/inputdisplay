@@ -1,16 +1,11 @@
-# zuri_work
+# App display
 
-A new Flutter application.
+(https://user-images.githubusercontent.com/69259825/130265524-bdb96fbf-e973-466b-891d-fb77d81a9267.mp4)
 
-## Getting Started
+# image links
+![App display =>] (https://github.com/Hadieeyyy/inputdisplay/blob/master/assets/inputdisplay.mp4)
+![HNG LOGO =>] (https://github.com/Hadieeyyy/inputdisplay/blob/master/assets/hng.png)
+![i4g LOGO =>] (https://github.com/Hadieeyyy/inputdisplay/blob/master/assets/i4g.jpg)
+![Zuri LOGO =>] (https://github.com/Hadieeyyy/inputdisplay/blob/master/assets/zuri.png)
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
